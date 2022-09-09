@@ -6,30 +6,31 @@
 
 .image4 {
     position: absolute;
-    top: 30px;
+    top: 20%;
     left: 20%;
 }
 
 .image2 {
     position: absolute;
-    top: 30px;
+    top: 20%;
     left: 25%;
-} 
+}
 
 
 .image3 {
     position: absolute;
-    top: 30px;
+    top: 20%;
     left: 35%;
 }
 
 .image1 {
     position: absolute;
-    top: 30px;
+    top: 20%;
     left: 30%;
 }
 
-.form-check{
+.form-check {
     margin-left: -6%;
     margin-top: 2%;
 }
+

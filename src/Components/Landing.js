@@ -18,7 +18,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     height: 5vh;
-    margin-top:30px;
+    margin-top:2%;
 `
 const linkStyle = {
     color: '#000000',
@@ -30,26 +30,26 @@ const linkStyle = {
 const Button = styled.button`
     color:white;
     padding:15px;
-    border-radius:5px;
+    border-radius:2%;
 
 
 `
 const Button1 = styled.button`
     color:white;
-    border-radius:30px;
+    border-radius:25px;
     background: linear-gradient(#f77d0b, #f70b4f);
     border:1px solid #f70b4f;
 `
 const Button2 = styled.button`
     color:white;
-    padding:15px;
-    border-radius:5px;
+    padding:4%;
+    border-radius:2%;
     width:40%;
 
 `
 const Div = styled.div`
         display: grid;
-        grid-template-columns: 700px 700px;
+        grid-template-columns: 50% 50%;
 `
 
 const H1 = styled.h1`
@@ -74,7 +74,7 @@ const Footer = styled.div`
 `
 const End = styled.div`
     margin-top:42rem;
-    margin-left:70%;
+    margin-left:50%;
     font-family: 'Times New Roman', Times, serif;
 
 
@@ -82,7 +82,7 @@ const End = styled.div`
 const Landing = () => {
     return (
         <div className='container'>
-            <Nav>
+            <Nav className='nav'>
                 <div className='logo'>
                     <img src={logo} alt='logo' ></img>
                     <Link to="/"style={linkStyle} > <Button1 type="button">Hosterr is Hiring!</Button1></Link>
@@ -125,10 +125,13 @@ const Landing = () => {
                             <img src={hero} alt='hero' className='image1' width={500}></img>
                         </div>
                         <End className=''>
+                            <div className='avatar'>
                             <img src={avatar} alt='' ></img>
-                                <p>Have any questions?</p>
-                            <h5>Talk to a specialist</h5>
-
+                            </div>
+                            <div className='text d-flex '>
+                            <p>Have any questions?</p>
+                            <p>Talk to a specialist</p>
+                            </div>
                             </End>
                         
                 </div>

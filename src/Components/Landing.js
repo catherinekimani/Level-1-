@@ -27,6 +27,11 @@ const linkStyle = {
     padding: '20px'
 };
 
+const DIV = styled.h5`
+    line-height: 10px;
+    font-weight:bold;
+`
+
 const Button = styled.button`
     color:white;
     padding:15px;
@@ -75,6 +80,7 @@ const Footer = styled.div`
 const End = styled.div`
     margin-top:42rem;
     margin-left:50%;
+    display:flex;
     font-family: 'Times New Roman', Times, serif;
 
 
@@ -128,9 +134,9 @@ const Landing = () => {
                             <div className='avatar'>
                             <img src={avatar} alt='' ></img>
                             </div>
-                            <div className='text d-flex '>
-                            <p>Have any questions?</p>
-                            <p>Talk to a specialist</p>
+                            <div class='ms-3'>
+                            <h4>Have any questions?</h4>
+                            <DIV>Talk to a specialist</DIV>
                             </div>
                             </End>
                         

@@ -12,14 +12,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 
 // styling
-const Nav = styled.nav`
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 5vh;
-    margin-top:2%;
-`
+
 const linkStyle = {
     color: '#000000',
     fontSize: '1rem',
@@ -32,16 +25,13 @@ const DIV = styled.h5`
     font-weight:bold;
 `
 
-const Button = styled.button`
-    color:white;
-    padding:15px;
-    border-radius:2%;
 
-
-`
-const Button1 = styled.button`
+const Button1 = styled.a`
+    text-decoration:none;
     color:white;
-    border-radius:25px;
+    padding:3px;
+    margin-left:10px;
+    border-radius:20px 20px 20px 20px;
     background: linear-gradient(#f77d0b, #f70b4f);
     border:1px solid #f70b4f;
 `
@@ -52,10 +42,10 @@ const Button2 = styled.button`
     width:40%;
 
 `
-const Div = styled.div`
-        display: grid;
-        grid-template-columns: 50% 50%;
-`
+// const Div = styled.div`
+//         display: grid;
+//         grid-template-columns: 50% 50%;
+// `
 
 const H1 = styled.h1`
     font-size:4.5rem;
@@ -87,25 +77,34 @@ const End = styled.div`
 `
 const Landing = () => {
     return (
-        <div className='container'>
-            <Nav className='nav'>
-                <div className='logo'>
+        <div className='container-fluid'>
+            <nav class="navbar navbar-dark navbar-expand-md ">
+                <div class="container-fluid">
+                    <div class='logo d-flex'>
                     <img src={logo} alt='logo' ></img>
-                    <Link to="/"style={linkStyle} > <Button1 type="button">Hosterr is Hiring!</Button1></Link>
+                        <Button1><li class="nav-item"><a class="nav-link btn1 text-light" href='join'>Hosterr is Hiring!</a></li></Button1>
+                        </div>
+                    {/* collapse */}
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-dark"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav text-dark mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="plans">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="find">Find Domain</a></li>
+                    <li class="nav-item"><a class="nav-link" href="why">Why Hosterr</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item"><a class="nav-link mt-2" href="plans">Sign in</a></li>
+                            <li class="nav-item"><a class="nav-link btn btn2 btn-primary p-3 text-light" href='join'>Join Waitlist</a></li>
+                </ul>
+            </div>
                 </div>
-                <div className='links'>
-                    <Link to="/plans"style={linkStyle}>Plans</Link>
-                    <Link to="/Find" style={linkStyle}>Find Domain</Link>
-                    <Link to="/why" style={linkStyle}>Why Hosterr</Link>
-                </div>
-                <div className='links'>
-                    <Link to="/sign" style={linkStyle}>Sign in</Link>
-                    <Link to="/Find"style={linkStyle} > <Button type="button" className='btn-primary'> Join Waitlist </Button></Link>
-                </div>
-            </Nav>
+            </nav>
+            
             <Two className='two'>
-            <Div className='row'>
-                <div class="column">
+            <div className='row'>
+                <div class="col-md-6">
                     <H1> Host your website in less than 5 minutes.</H1>
                     <P> With Hosterr,get your website up and running in no less than 5 minutes with the most competitive pricing packages online.</P>
                     <form class="d-flex w-75">
@@ -123,7 +122,7 @@ const Landing = () => {
                             </Footer>
                 </div>
                 
-                    <div class="column">
+                    <div class="col-md-6">
                     <div class="parent">
                             <img src={first} alt='' className='image4' width={500}></img>
                             <img src={second} alt='' className='image2' width={500}></img>
@@ -141,7 +140,7 @@ const Landing = () => {
                             </End>
                         
                 </div>
-                </Div>
+                </div>
                 </Two>
         </div>
     );

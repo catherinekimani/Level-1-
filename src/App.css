@@ -1,3 +1,19 @@
+.container-fluid{
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+li{
+    list-style-type: none;
+}
+ul li a{
+    color: #000000 !important;
+}
+.btn1{
+    padding: 5px;
+}
 .parent {
     position: relative;
     top: 0;
@@ -34,3 +50,15 @@
     margin-top: 2%;
 }
 
+/* media queries */
+@media screen and (max-width: 480px) {
+    .btn1{
+        width: auto;
+        padding: 2px;
+        font-size: smaller;
+    }
+
+    .btn2{
+        display: none;
+    }
+}

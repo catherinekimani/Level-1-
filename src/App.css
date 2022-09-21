@@ -1,8 +1,8 @@
 .container-fluid{
     width: 100%;
-    height: auto;
-    padding-left: 5%;
-    padding-right: 5%;
+    height: auto!important;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 li{
@@ -44,12 +44,35 @@ ul li a{
     top: 20%;
     left: 30%;
 }
-
+button{
+    outline: none;
+}
 .form-check {
-    margin-left: -6%;
-    margin-top: 2%;
+    
+    padding:0!important;
+    padding-left: 0 !important;
+}
+form{
+    height: 80vh;
+}
+.avatar{
+    width: 100% !important;
+
+    margin-left: 95% !important;
+}
+.all{
+    width:1100px !important;
+    margin-top: 20%;
 }
 
+.para{
+    width: 400px;
+}
+
+.two{
+    padding-left: 3%;
+    padding-right: 3%;
+}
 /* media queries */
 @media screen and (max-width: 480px) {
     .btn1{
@@ -60,5 +83,62 @@ ul li a{
 
     .btn2{
         display: none;
+    }
+
+    h1{
+        font-size: 62px !important;
+        margin-top: 45px;
+    }
+    p{
+        font-size: 22px !important;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .parent img{
+        width: 300px;
+    }
+    .row .second{
+        padding: 0;
+        padding-right: 70%;
+        width: auto;
+        height: 400px;
+    }
+    .col-md-6{
+        height: auto;
+    }
+    input{
+        height: 12vh;
+        
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn3{
+        width:428px !important;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+
+    .form-check{
+        padding-left: 0 !important;
+        height: 5vh !important;
+    }
+
+    .footer{
+        margin: 20px 0!important;
+        width: auto !important;
+    }
+
+    .all{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15% !important;
+    }
+    .avatar{
+        padding-top: 20px !important;
+        margin: 0 15px !important;
     }
 }

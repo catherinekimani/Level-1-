@@ -21,7 +21,6 @@ const linkStyle = {
 };
 
 const DIV = styled.h5`
-    line-height: 10px;
     font-weight:bold;
 `
 
@@ -32,12 +31,13 @@ const Button1 = styled.a`
     padding:3px;
     margin-left:10px;
     border-radius:20px 20px 20px 20px;
-    background: linear-gradient(#f77d0b, #f70b4f);
-    border:1px solid #f70b4f;
+    background: linear-gradient(#eba358, #ea676d);
+    border:1px solid transparent;
 `
 const Button2 = styled.button`
     color:white;
     padding:4%;
+    margin-left:2%;
     border-radius:2%;
     width:40%;
 
@@ -48,13 +48,13 @@ const Button2 = styled.button`
 // `
 
 const H1 = styled.h1`
-    font-size:4.5rem;
+    font-size:4.8rem;
     font-family: 'Times New Roman', Times, serif;
     font-weight:bold;
 
 `
 const P = styled.p`
-    font-size:1.75rem;
+    font-size:2.1rem;
     font-family: 'Times New Roman', Times, serif;
 
 `
@@ -63,13 +63,10 @@ const Two = styled.div`
 
 `
 
-const Footer = styled.div`
-    margin-top:35%;
 
-`
 const End = styled.div`
-    margin-top:42rem;
-    margin-left:50%;
+    
+    
     display:flex;
     font-family: 'Times New Roman', Times, serif;
 
@@ -107,37 +104,39 @@ const Landing = () => {
                 <div class="col-md-6">
                     <H1> Host your website in less than 5 minutes.</H1>
                     <P> With Hosterr,get your website up and running in no less than 5 minutes with the most competitive pricing packages online.</P>
-                    <form class="d-flex w-75">
-                    <input class="form-control me-2" type="search" placeholder="Enter e-mail address" aria-label="Search"/>
-                        <Button2 className='btn-primary' type="button">Join Waitlist</Button2>
-                    </form>
-                        <div class="mb-5 form-check">
+                    <div class=' form d-flex justify-content-between'>
+                    <input class="form-control" type="search" placeholder="Enter e-mail address" aria-label="Search"/>
+                        <Button2 className='btn-primary btn3' type="button">Join Waitlist</Button2>
+                        </div>
+                        <div class=" form-check">
                             <img src={check} className='p-3'  alt=''></img>
                         <label class="form-check-label" for="exampleCheck1">No spam,ever.Unsubscribe anytime</label>
                         </div>
-                        <Footer className='footer'>
+                        <div class='all d-flex justify-content-between'>
+                        <div className='footer'>
                     <Link to="/"style={linkStyle}>Facebook</Link>
                     <Link to="/" style={linkStyle}>Instagram</Link>
                             <Link to="/" style={linkStyle}>Twitter</Link>
-                            </Footer>
+                        </div>
+                        <End className='avatar'>
+                            <div className='avatar1'>
+                            <img src={avatar} alt='' ></img>
+                            </div> 
+                            <div class='ms-3 para'>
+                            <h4>Have any questions?</h4>
+                            <DIV>Talk to a specialist</DIV>
+                            </div> 
+                        </End>
+                        </div>
                 </div>
                 
-                    <div class="col-md-6">
+                    <div class="col-md-6 second">
                     <div class="parent">
                             <img src={first} alt='' className='image4' width={500}></img>
                             <img src={second} alt='' className='image2' width={500}></img>
                             <img src={third} alt='' className='image3' width={500}></img>
                             <img src={hero} alt='hero' className='image1' width={500}></img>
                         </div>
-                        <End className=''>
-                            <div className='avatar'>
-                            <img src={avatar} alt='' ></img>
-                            </div>
-                            <div class='ms-3'>
-                            <h4>Have any questions?</h4>
-                            <DIV>Talk to a specialist</DIV>
-                            </div>
-                            </End>
                         
                 </div>
                 </div>

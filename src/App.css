@@ -74,6 +74,7 @@ form{
     padding-right: 3%;
 }
 /* media queries */
+/* mobile view */
 @media screen and (max-width: 480px) {
     .btn1{
         width: auto;
@@ -140,5 +141,161 @@ form{
     .avatar{
         padding-top: 20px !important;
         margin: 0 15px !important;
+    }
+}
+
+/* tablet view */
+@media (min-width: 481px) and (max-width: 767px){
+    .btn1{
+        width: auto;
+        padding: 2px;
+        font-size: smaller;
+    }
+    .btn2{
+        display: none;
+    }
+
+    h1{
+        font-size: 55px !important;
+        margin-top: 45px;
+    }
+    p{
+        font-size: 18px !important;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .parent img{
+        padding-left: 10%;
+        padding-right: 10%;
+        width:480px !important;
+    }
+    .row .second{
+        padding: 0;
+        padding-right:20%;
+        width: auto;
+        height: 400px;
+    }
+    .col-md-6{
+        height: auto;
+    }
+    input{
+        width: 300px !important;
+        height: 12vh;
+        
+        
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+        margin-right: 0 !important;
+        margin-left: auto !important;
+        justify-content:flex-start !important;
+    }
+    .btn3{
+        height: 12vh;
+        padding: 0 !important;
+        width:150px !important;
+        margin: 0 0 0 5px !important;
+    }
+
+    .form-check{
+        padding-left: 0 !important;
+        height: 5vh !important;
+    }
+
+    .footer{
+        margin: 20px 0!important;
+        width: auto !important;
+    }
+
+    .all{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15% !important;
+    }
+    .avatar1 img{
+        width: 65px;
+    }
+    .avatar{
+        padding-top: 20px !important;
+        margin: 0 0 0 12% !important;
+    }
+}
+
+/* resol */
+@media (min-width: 768px) and (max-width: 1024px){
+    .btn1{
+        width: auto;
+        padding: 2px;
+        font-size: smaller;
+    }
+
+    .btn2{
+        display: none;
+    }
+
+    h1{
+        font-size: 50px !important;
+        margin-top: 45px;
+        width: 600px !important;
+    }
+    p{
+        font-size: 20px !important;
+        width: 700px !important;
+    }
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .parent img{
+        width: 300px;
+    }
+    .row .second{
+        padding: 0;
+        padding-right: 70%;
+        width: auto;
+        height: 400px;
+    }
+    .col-md-6{
+        height: auto;
+    }
+    input{
+        width: 500px !important;
+        height: 12vh;
+        
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+        width: 400px !important;
+    }
+    .btn3{
+        height:12vh !important;
+        padding: 0 !important;
+        width: 500px !important;
+        /* margin: 0 !important;
+        margin-top: 10px !important; */
+    }
+
+    .form-check{
+        padding-left: 0 !important;
+        height: 5vh !important;
+    }
+
+    .footer{
+        margin: 20px 0!important;
+        width: auto !important;
+    }
+
+    .all{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15% !important;
+    }
+    .avatar{
+        padding-top: 20px !important;
+        margin: 0 105px !important;
     }
 }
